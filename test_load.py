@@ -12,7 +12,7 @@ img_height = 28
 img_width = 28
 
 # load model
-model = tf.keras.models.load_model('my_model.keras')
+model = tf.keras.models.load_model("cnn_digit01.keras")
 
 model.summary()
 

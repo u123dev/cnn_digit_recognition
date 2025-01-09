@@ -73,7 +73,7 @@ model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_spl
 
 
 # Save the model in .keras  file
-model.save('my_model.keras')
+model.save('cnn_digit01.keras')
 print(f'Model saved!')
 # Recreate the exact same model from the file:
 # model = keras.models.load_model("my_model.keras")
