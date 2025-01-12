@@ -1,34 +1,81 @@
+Model 2: cnn_digit02.keras
+
 x_train shape: (60000, 28, 28, 1)
 60000 train samples
 10000 test samples
-Model 2: cnn_digit03.keras
-Model: "sequential_1"
+Model: "sequential"
 +--------------------------------------------------------------------------+
 | Layer (type)                    | Output Shape           |       Param # |
 |---------------------------------+------------------------+---------------|
-| conv2d_2 (Conv2D)               | (None, 26, 26, 64)     |           640 |
+| conv2d (Conv2D)                 | (None, 26, 26, 64)     |           640 |
 |---------------------------------+------------------------+---------------|
-| conv2d_3 (Conv2D)               | (None, 24, 24, 64)     |        36,928 |
+| conv2d_1 (Conv2D)               | (None, 24, 24, 64)     |        36,928 |
 |---------------------------------+------------------------+---------------|
-| max_pooling2d_2 (MaxPooling2D)  | (None, 12, 12, 64)     |             0 |
+| max_pooling2d (MaxPooling2D)    | (None, 12, 12, 64)     |             0 |
 |---------------------------------+------------------------+---------------|
-| conv2d_4 (Conv2D)               | (None, 10, 10, 128)    |        73,856 |
+| conv2d_2 (Conv2D)               | (None, 10, 10, 128)    |        73,856 |
 |---------------------------------+------------------------+---------------|
-| conv2d_5 (Conv2D)               | (None, 8, 8, 128)      |       147,584 |
+| conv2d_3 (Conv2D)               | (None, 8, 8, 128)      |       147,584 |
 |---------------------------------+------------------------+---------------|
 | global_average_pooling2d        | (None, 128)            |             0 |
 | (GlobalAveragePooling2D)        |                        |               |
 |---------------------------------+------------------------+---------------|
-| flatten_1 (Flatten)             | (None, 128)            |             0 |
+| flatten (Flatten)               | (None, 128)            |             0 |
 |---------------------------------+------------------------+---------------|
-| dense_2 (Dense)                 | (None, 128)            |        16,512 |
+| dense (Dense)                   | (None, 128)            |        16,512 |
 |---------------------------------+------------------------+---------------|
-| dropout_1 (Dropout)             | (None, 128)            |             0 |
+| dropout (Dropout)               | (None, 128)            |             0 |
 |---------------------------------+------------------------+---------------|
-| dense_3 (Dense)                 | (None, 10)             |         1,290 |
+| dense_1 (Dense)                 | (None, 10)             |         1,290 |
 +--------------------------------------------------------------------------+
- Total params: 830,432 (3.17 MB)
+ Total params: 276,810 (1.06 MB)
  Trainable params: 276,810 (1.06 MB)
  Non-trainable params: 0 (0.00 B)
- Optimizer params: 553,622 (2.11 MB)
-
+Epoch 1/15
+Epoch 1: val_loss improved from inf to 0.12456, saving model to best_cnn_digit022.keras
+422/422 - 37s - 88ms/step - accuracy: 0.7410 - loss: 0.7593 - val_accuracy: 0.9653 - val_loss: 0.1246 - learning_rate: 1.0000e-03
+Epoch 2/15
+Epoch 2: val_loss did not improve from 0.12456
+422/422 - 42s - 99ms/step - accuracy: 0.9380 - loss: 0.2116 - val_accuracy: 0.9548 - val_loss: 0.1462 - learning_rate: 1.0000e-03
+Epoch 3/15
+Epoch 3: val_loss improved from 0.12456 to 0.06555, saving model to best_cnn_digit022.keras
+422/422 - 42s - 100ms/step - accuracy: 0.9571 - loss: 0.1439 - val_accuracy: 0.9813 - val_loss: 0.0655 - learning_rate: 1.0000e-03
+Epoch 4/15
+Epoch 4: val_loss improved from 0.06555 to 0.04835, saving model to best_cnn_digit022.keras
+422/422 - 43s - 101ms/step - accuracy: 0.9692 - loss: 0.1079 - val_accuracy: 0.9877 - val_loss: 0.0484 - learning_rate: 1.0000e-03
+Epoch 5/15
+Epoch 5: val_loss improved from 0.04835 to 0.04220, saving model to best_cnn_digit022.keras
+422/422 - 43s - 102ms/step - accuracy: 0.9756 - loss: 0.0876 - val_accuracy: 0.9873 - val_loss: 0.0422 - learning_rate: 1.0000e-03
+Epoch 6/15
+Epoch 6: val_loss did not improve from 0.04220
+422/422 - 43s - 101ms/step - accuracy: 0.9785 - loss: 0.0750 - val_accuracy: 0.9857 - val_loss: 0.0472 - learning_rate: 1.0000e-03
+Epoch 7/15
+Epoch 7: val_loss improved from 0.04220 to 0.03949, saving model to best_cnn_digit022.keras
+422/422 - 42s - 100ms/step - accuracy: 0.9811 - loss: 0.0644 - val_accuracy: 0.9890 - val_loss: 0.0395 - learning_rate: 1.0000e-03
+Epoch 8/15
+Epoch 8: val_loss improved from 0.03949 to 0.03554, saving model to best_cnn_digit022.keras
+422/422 - 299s - 709ms/step - accuracy: 0.9833 - loss: 0.0590 - val_accuracy: 0.9908 - val_loss: 0.0355 - learning_rate: 1.0000e-03
+Epoch 9/15
+Epoch 9: val_loss did not improve from 0.03554
+422/422 - 77s - 182ms/step - accuracy: 0.9853 - loss: 0.0496 - val_accuracy: 0.9888 - val_loss: 0.0383 - learning_rate: 1.0000e-03
+Epoch 10/15
+Epoch 10: val_loss improved from 0.03554 to 0.03302, saving model to best_cnn_digit022.keras
+422/422 - 43s - 101ms/step - accuracy: 0.9870 - loss: 0.0445 - val_accuracy: 0.9908 - val_loss: 0.0330 - learning_rate: 1.0000e-03
+Epoch 11/15
+Epoch 11: val_loss improved from 0.03302 to 0.02938, saving model to best_cnn_digit022.keras
+422/422 - 42s - 99ms/step - accuracy: 0.9877 - loss: 0.0417 - val_accuracy: 0.9930 - val_loss: 0.0294 - learning_rate: 1.0000e-03
+Epoch 12/15
+Epoch 12: val_loss improved from 0.02938 to 0.02934, saving model to best_cnn_digit022.keras
+422/422 - 77s - 182ms/step - accuracy: 0.9891 - loss: 0.0358 - val_accuracy: 0.9922 - val_loss: 0.0293 - learning_rate: 1.0000e-03
+Epoch 13/15
+Epoch 13: val_loss did not improve from 0.02934
+422/422 - 46s - 109ms/step - accuracy: 0.9898 - loss: 0.0345 - val_accuracy: 0.9933 - val_loss: 0.0297 - learning_rate: 1.0000e-03
+Epoch 14/15
+Epoch 14: val_loss improved from 0.02934 to 0.02906, saving model to best_cnn_digit022.keras
+422/422 - 67s - 159ms/step - accuracy: 0.9907 - loss: 0.0334 - val_accuracy: 0.9933 - val_loss: 0.0291 - learning_rate: 1.0000e-03
+Epoch 15/15
+Epoch 15: val_loss improved from 0.02906 to 0.02229, saving model to best_cnn_digit022.keras
+422/422 - 42s - 99ms/step - accuracy: 0.9918 - loss: 0.0280 - val_accuracy: 0.9947 - val_loss: 0.0223 - learning_rate: 1.0000e-03
+Model cnn_digit02.keras saved!
+Test loss: 0.02002071775496006
+Test accuracy: 0.9934999942779541

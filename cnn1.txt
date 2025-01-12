@@ -1,7 +1,8 @@
+Model 1: cnn_digit01.keras
+
 x_train shape: (60000, 28, 28, 1)
 60000 train samples
 10000 test samples
-Model 1: cnn_digit01.keras
 Model: "sequential"
 +--------------------------------------------------------------------------+
 | Layer (type)                    | Output Shape           |       Param # |
@@ -16,13 +17,39 @@ Model: "sequential"
 |---------------------------------+------------------------+---------------|
 | flatten (Flatten)               | (None, 3200)           |             0 |
 |---------------------------------+------------------------+---------------|
-| dense (Dense)                   | (None, 64)             |       204,864 |
+| dense (Dense)                   | (None, 128)            |       409,728 |
 |---------------------------------+------------------------+---------------|
-| dropout (Dropout)               | (None, 64)             |             0 |
+| dropout (Dropout)               | (None, 128)            |             0 |
 |---------------------------------+------------------------+---------------|
-| dense_1 (Dense)                 | (None, 10)             |           650 |
+| dense_1 (Dense)                 | (None, 10)             |         1,290 |
 +--------------------------------------------------------------------------+
- Total params: 840,032 (3.20 MB)
- Trainable params: 280,010 (1.07 MB)
+ Total params: 485,514 (1.85 MB)
+ Trainable params: 485,514 (1.85 MB)
  Non-trainable params: 0 (0.00 B)
- Optimizer params: 560,022 (2.14 MB)
+Epoch 1/15
+422/422 - 13s - 30ms/step - accuracy: 0.9141 - loss: 0.2770 - val_accuracy: 0.9842 - val_loss: 0.0522 - learning_rate: 1.0000e-03
+Epoch 2/15
+422/422 - 14s - 33ms/step - accuracy: 0.9742 - loss: 0.0884 - val_accuracy: 0.9885 - val_loss: 0.0398 - learning_rate: 1.0000e-03
+Epoch 3/15
+422/422 - 15s - 37ms/step - accuracy: 0.9811 - loss: 0.0626 - val_accuracy: 0.9893 - val_loss: 0.0351 - learning_rate: 1.0000e-03
+Epoch 4/15
+422/422 - 15s - 35ms/step - accuracy: 0.9841 - loss: 0.0528 - val_accuracy: 0.9892 - val_loss: 0.0325 - learning_rate: 1.0000e-03
+Epoch 5/15
+422/422 - 14s - 33ms/step - accuracy: 0.9872 - loss: 0.0424 - val_accuracy: 0.9902 - val_loss: 0.0329 - learning_rate: 1.0000e-03
+Epoch 6/15
+422/422 - 14s - 32ms/step - accuracy: 0.9886 - loss: 0.0362 - val_accuracy: 0.9920 - val_loss: 0.0285 - learning_rate: 1.0000e-03
+Epoch 7/15
+422/422 - 14s - 33ms/step - accuracy: 0.9900 - loss: 0.0323 - val_accuracy: 0.9918 - val_loss: 0.0308 - learning_rate: 1.0000e-03
+Epoch 8/15
+422/422 - 14s - 32ms/step - accuracy: 0.9911 - loss: 0.0280 - val_accuracy: 0.9915 - val_loss: 0.0311 - learning_rate: 1.0000e-03
+Epoch 9/15
+Epoch 9: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+422/422 - 14s - 32ms/step - accuracy: 0.9920 - loss: 0.0251 - val_accuracy: 0.9923 - val_loss: 0.0315 - learning_rate: 1.0000e-03
+Epoch 10/15
+422/422 - 14s - 32ms/step - accuracy: 0.9950 - loss: 0.0156 - val_accuracy: 0.9937 - val_loss: 0.0305 - learning_rate: 5.0000e-04
+Epoch 11/15
+422/422 - 14s - 32ms/step - accuracy: 0.9956 - loss: 0.0136 - val_accuracy: 0.9935 - val_loss: 0.0311 - learning_rate: 5.0000e-04
+Epoch 11: early stopping
+Model cnn_digit012.keras saved!
+Test loss: 0.024904752150177956
+Test accuracy: 0.9926999807357788
