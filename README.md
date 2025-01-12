@@ -92,3 +92,6 @@ py test_load.py
 ### Результаты обновленной модели на нестандартных входных данных:
 ![cnn_model_digit02.keras_2025.png](cnn_model_digit02.keras_2025.png)
 
+
+### Contact
+Feel free to contact: u123@ua.fm
