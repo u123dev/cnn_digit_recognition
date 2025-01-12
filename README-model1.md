@@ -1,5 +1,5 @@
 # Convolutional Neural Network for Digit Recognition
-## [ Первоначальная версия - Модель_1 CNN](./cnn1.txt)
+## [ Первоначальная версия - Модель_1 CNN  - Логи](./cnn1.txt)
 ___
 # Линейная модель CNN Sequential включает:
 * ## 1. Слой входной (Input):
@@ -47,3 +47,16 @@ ___
 
 ### Метрика accuracy, по которой будет оцениваться производительность модели. 
 Показывает, какой процент предсказаний модели правильный. 
+
+___
+### Model `cnn_digit01.keras`
+
+* #### Total params: `485,514` (1.85 MB)
+* #### Trainable params: `485,514` (1.85 MB)
+* #### Non-trainable params: 0 (0.00 B)
+* #### Test loss: `0.024904752150177956`
+* #### Test accuracy: `0.9926999807357788`
+___
+
+### Contact
+Feel free to contact: u123@ua.fm
